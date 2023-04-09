@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&family=Oswald:wght@800&family=Poppins:ital,wght@1,200&display=swap");
 body {
+  padding: 0;
+  margin: 0;
   background-image: url(./img/bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center;
+ 
+  width: 100%;
 }
 nav {
   background-color: black;
-  width: auto;
-  height: 50px;
   color: rgb(255, 255, 255);
   font-size: 30px;
   margin-top: -30px;
@@ -17,75 +18,91 @@ nav {
   font-family: "Noto Sans", sans-serif;
 }
 .container {
-  display: flex;
-  text-align: center;
-  padding: 40px 35px;
-  align-items: center;
-  justify-content: center;
+ 
 }
+.input{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 5px;
 
+}
 .input input {
-  border: 0;
-  outline: 0;
-  border-radius: 15px 0 0 15px;
-  padding: 10px 25px;
-  margin-top: 30px;
-  width: 60vh;
-  height: 5vh;
-  text-align: center;
-  border: 2px solid rgb(83, 79, 79);
-  font-family: "Oswald", sans-serif;
+ 
+  width: 20vw;
+  padding: 2px;
   font-size: 30px;
+  text-align: center;
+  color:rgb(35, 35, 87) ;
+  border-radius: 5px;
+  background-color: rgb(181, 181, 216);
+  border: 2px solid rgb(41, 41, 73);
+
 }
 .input button {
-  width: 13vh;
-  height:9vh;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
-  font-size: 20px;
-  text-align: center;
-  font-family:"Oswald", sans-serif ;
-  background: linear-gradient(#001124, #24558b, #00e0ff);
+  width: 3vw;
+  padding: 2px;
+  font-size: 30px;
   border-radius: 5px;
-  font-weight: 600;
+  background-color: rgb(145, 145, 196);
+  border: 2px solid rgb(41, 41, 73);
   cursor: pointer;
+
+  /* width: 13vh;
+  
+  height:9vh; */
+ 
 }
 .box {
+  margin-top: 20px;
   display: flex;
+  gap: 10px 2px;
   flex-wrap:wrap;
   justify-content: space-between;
 }
 .boxChild {
+  
   color: black;
   position: relative;
-  margin-left: 30px;
-  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
   width: 35vh;
-  height: 40vh;
-  box-shadow: 20px 20px 50px rgba(255, 255, 255,0.1);
-  background-color: #ffff;
-  border-radius: 15px;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid rgba(255, 255, 255,0.5);
+  height: 34vh;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   padding-top: 10px;
-  padding-left: 10px;
+  align-items: center;
+  
   cursor: pointer;
 }
 .boxChild img {
-  width: 29vh;
-  height: 25vh;
+  width: 13vw;
+  height: 20vh;
   justify-content: center;
+}
+a{
+  text-decoration: none;
 }
 .boxChild h2 {
   text-align: center;
-  margin-top: -3px;
   font-family: 'Poppins', sans-serif;
-  font-size: 25px;
+  font-size: 15px;
   text-decoration: none;
   font-weight: 600;
 }
 .boxChild:hover{
   transform: scale(1.08);
+  background-color: rgb(109, 109, 196);
+}
+.input button:hover{
+  background-color: rgb(44, 44, 92);
+  transform: scale(1.1);
+}
+.input input:hover{
+  transform: scale(1.1);
 }
